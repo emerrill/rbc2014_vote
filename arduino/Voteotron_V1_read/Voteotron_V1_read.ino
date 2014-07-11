@@ -8,11 +8,36 @@ void setup() {
   Serial.begin(BAUD);
   delay(1000);
   
-  for (byte i = 0; i <= MAX_SLOT; i++) {
-    Serial.print(i, DEC);
-    Serial.print(": ");
-    Serial.println(readEEPROMWord(i), DEC);
-  }
+  Serial.print("Scores:");
+  Serial.println();
+  
+  Serial.print("1.21: ");
+  Serial.print(readEEPROMWord(0), DEC);
+  Serial.println();
+  
+  Serial.print("Omnicorp: ");
+  Serial.print(readEEPROMWord(1), DEC);
+  Serial.println();
+  
+  Serial.print("MB Labs: ");
+  Serial.print(readEEPROMWord(2), DEC);
+  Serial.println();
+  
+  Serial.print("Detroitus: ");
+  Serial.print(readEEPROMWord(3), DEC);
+  Serial.println();
+  
+  Serial.print("MakerTwins: ");
+  Serial.print(readEEPROMWord(4), DEC);
+  Serial.println();
+  
+  Serial.print("i3: ");
+  Serial.print(readEEPROMWord(5), DEC);
+  Serial.println();
+  
+  Serial.print("Tactical: ");
+  Serial.print(readEEPROMWord(6), DEC);
+  Serial.println();
 
 }
 

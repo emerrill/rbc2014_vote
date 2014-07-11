@@ -1,5 +1,5 @@
 
-#define POT_PIN          14
+#define POT_PIN          15
 #define BAUD             57600
 
 void setup() {
